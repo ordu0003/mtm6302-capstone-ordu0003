@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa: Photo of The Day</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/44d8830633.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="conatiner">
+    <nav>
+        <div class="logo">
+          <a href="#"><img src="your-logo.png" alt="Logo"></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Your List</a></li>
+        </ul>
+        <div class="search-bar">
+          <form action="#">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <main>
+        <div class="banner">
+            <div class="banner-content">
+              <h1>Discover the Cosmos!</h1>
+              <p>Astronomy is a fascinating field that explores the mysteries of the universe. Join us on a journey to uncover the secrets of the cosmos.</p>
+              <p>From the Big Bang to black holes, there is so much to learn and explore. Let's embark on an adventure together!</p>
+              <form class="search-form">
+            <!---<label for="search-date">Search by:</label>--->
+                <select id="search-type" name="search-type">
+                  <option value="date">Date</option>
+                  <option value="month">Month</option>
+                  <option value="year">Year</option>
+                </select>
+                <input type="number" id="search-value" name="search-value" min="1" max="31" placeholder="DD">
+                <input type="number" id="search-value" name="search-value" min="1" max="12" placeholder="MM">
+                <input type="number" id="search-value" name="search-value" min="1900" max="2100" placeholder="YYYY">
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <div class="calendar-box">
+            <div class="calendar-header">
+              <button class="prev-month">&lt;</button>
+              <h2 class="calendar-month"></h2>
+              <button class="next-month">&gt;</button>
+            </div>
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                  <th>Sun</th>
+                </tr>
+              </thead>
+              <tbody class="calendar-body">
+              </tbody>
+            </table>
+          </div>
+          
+          
+          
+      </main>
+
+    </div>   
+</body>
+</html>
