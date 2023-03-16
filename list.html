@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nasa: Photo of The Day</title>
     <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/a3c61ba515.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,12 +18,12 @@
     <div class="container">
         <nav>
             <div class="logo">
-                <a href="#"><img src="images/nasa-logo-white.png" alt="Logo"></a>
+                <a href="index.html"><img src="images/nasa-logo-white.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Your List</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Calendar</a></li>
+                <li><a href="list.html">Your List</a></li>
             </ul>
             <div class="search-bar">
                 <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
@@ -36,28 +40,40 @@
         </nav>
         <main>
             <section class="favs-content">
-            <div class="favs">
-                <div class="favs-date">
-                    <h2>2023 | FEBRUARY | 01 </h2>
+                <div class="favs">
+                    <div class="favs-date">
+                        <h3>2023 | FEBRUARY | 01 </h3>
+                    </div>
+                    <h2>Jupiter and Venus Converge over Germany</h2>
                 </div>
-                <h1>Jupiter and Venus Converge over Germany</h1>
-            </div>
-            <div class="content">
-                <img class="responsive" src="images/JupiterVenus_Luy_960.jpg" alt="Jupiter and Venus Converge over Germany">
-                <div class="image-rights">
-                        <p> <em>Image Credit & Copyright: Michael Luy <a>(Trier Observatory)</em></p>
+                <div class="content">
+                    <div class="photo-credits">
+                        <img class="responsive" src="images/JupiterVenus_Luy_960.jpg"
+                            alt="Jupiter and Venus Converge over Germany">
+                        <div class="image-rights">
+                            <p> <em>Image Credit & Copyright: Michael Luy <a>(Trier Observatory)</em></p>
+                        </div>
+                    </div>
+                    <h3>Explanation</h3>
+                    <div class="paragraph">
+                        This was a sky to show the kids. Early this month the two brightest planets in the night sky,
+                        Jupiter and Venus, appeared to converge. At their closest, the two planets were separated by
+                        only about the angular width of the full moon. The spectacle occurred just after sunset and was
+                        seen and photographed all across planet Earth. The displayed image was taken near to the time of
+                        closest approach from Wiltingen, Germany, and features the astrophotographer, spouse, and their
+                        two children. Of course, Venus remains much closer to both the Sun and the Earth than Jupiter --
+                        the apparent closeness between the planets in the sky of Earth was only angular. Jupiter and
+                        Venus have passed and now appear increasingly far apart. Similar planetary convergence
+                        opportunities will eventually arise. In a few months, for example, Mars and Venus will appear to
+                        congregate just as the Sun sets.
+                    </div>
                 </div>
-                <h3>Explanation</h3>
-                <div class="paragraph">
-                    This was a sky to show the kids. Early this month the two brightest planets in the night sky, Jupiter and Venus, appeared to converge. At their closest, the two planets were separated by only about the angular width of the full moon. The spectacle occurred just after sunset and was seen and photographed all across planet Earth. The displayed image was taken near to the time of closest approach from Wiltingen, Germany, and features the astrophotographer, spouse, and their two children. Of course, Venus remains much closer to both the Sun and the Earth than Jupiter -- the apparent closeness between the planets in the sky of Earth was only angular. Jupiter and Venus have passed and now appear increasingly far apart. Similar planetary convergence opportunities will eventually arise. In a few months, for example, Mars and Venus will appear to congregate just as the Sun sets.
-                </div>
-            </div>
-        </section>
+            </section>
         </main>
     </div>
     <footer>
         <p>© 2023. All Rights Reserved</p>
-      </footer>
+    </footer>
 </body>
 
 </html>
