@@ -344,9 +344,22 @@ footer {
 }
 
 /* You favs*/
+main {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.favs-content{
+  display: inline;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  width: 80%;
+}
 
 .favs {
-  width: 80%;
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
   border: none;
@@ -374,8 +387,23 @@ footer {
 }
 
 .content {
-  width: 100%;
+  width: 80%;
   color: #fff;
+  display: inline;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.content img {
+  margin-top: 2rem;
+  border-radius: 1.625rem;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
 }
 
 
