@@ -368,8 +368,14 @@ footer {
   letter-spacing: 10px;
 }
 
-.content img {
-  width: 90%;
+.favs h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  color: #fff;
 }
 
 
