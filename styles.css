@@ -2,6 +2,10 @@ html {
   font-family: 'Unbounded', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #151336;
   background-image: url("images/nasa-bg.png");
@@ -25,9 +29,11 @@ p {
 }
 
 /*Nav search bar */
+
 .navbar {
   overflow: hidden;
 }
+
 .navbar a {
   float: left;
   display: block;
@@ -37,21 +43,25 @@ p {
   text-decoration: none;
   font-size: 20px;
 }
+
 .active {
   background-color: #3017B6;
   color: white;
 }
+
 .navbar .icon {
   display: none;
-}	
-.navbar a:hover, input:hover {
+}
+
+.navbar a:hover,
+input:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #FFFFFF;
-}	
+}
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 20px;
 }
@@ -87,20 +97,6 @@ nav {
 }
 
 /* CSS for search box */
-.navbar input[type=text] {
-  float: right;
-  padding: 12px;
-  border: none;
-  margin-top: 3px;
-  margin-right: 5px;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
-  color: #fff;	
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  height: 2.8rem;
-}
 
 #searchQuerySubmit {
   width: 3.5rem;
@@ -111,7 +107,6 @@ nav {
   outline: none;
 }
 
-/*
 #searchQueryInput {
   width: 100%;
   height: 2.8rem;
@@ -124,15 +119,13 @@ nav {
   color: #fff;
 }
 
-
-
 #searchQuerySubmit:hover {
   cursor: pointer;
 }
 
 .burger {
   display: none;
-}*/
+}
 
 /*Main banner*/
 
@@ -142,6 +135,7 @@ nav {
   align-items: center;
   justify-content: center;
   margin-bottom: 5rem;
+  margin: 0 auto;
 }
 
 .banner-content {
@@ -149,7 +143,6 @@ nav {
   color: white;
   max-width: 800px;
   padding: 20px;
-  display: flexbox;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -166,36 +159,39 @@ p {
   margin-bottom: 20px;
 }
 
+/*Search date in banner*/
 .search-date {
-  background-color: #fff;
-  border-radius: 1.625rem;
-  width: 50%;
-  margin-top: 5rem;
+  padding: 1rem;
 }
 
-form .search-form{
-  color: #fff;	
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  height: 2.8rem;
-}
-
-.search-form {
-  display: flex;
-  justify-content: space-around;
-  color: #fff;	
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
-  height: 2.8rem;
-}
-
-.search-form input[type="text"] {
+form .search-form input[type="text"] {
   border: none;
   padding: 10px;
   margin-right: 10px;
   font-size: 18px;
   width: 50%;
+}
 
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Calendar Section*/
@@ -205,15 +201,6 @@ section .dates-boxes {
   justify-content: center;
   align-items: center;
   width: 90%;
-}
-
-.dates-boxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  margin: 0 auto;
 }
 
 .day-box {
@@ -291,7 +278,7 @@ section .dates-boxes {
 
 
 
-/*Calendar*/
+/*Calendar Page*/
 /* Month header */
 
 .calendar {
@@ -375,9 +362,9 @@ footer {
   width: 100%;
 }
 
- footer p {
+footer p {
   font-size: 15px;
- }
+}
 
 /*Calendar 2*/
 
@@ -475,13 +462,15 @@ main {
 
 @media screen and (max-width: 768px) {
 
-  .navbar a:not(:first-child), .navbar input {
+  .navbar a:not(:first-child),
+  .navbar input {
     display: none;
-    }
-    .navbar a.icon {
+  }
+
+  .navbar a.icon {
     float: right;
     display: block;
-    }
+  }
 
   .nav-links {
     position: absolute;
@@ -496,25 +485,31 @@ main {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
   }
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
+
+  .navbar.responsive {
+    position: relative;
   }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   .navbar.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-  }	  
-  .navbar.responsive input { 
     float: none;
-  display: block;
-  width: 90%;
-  padding: 12px;
-  border: 2px solid black;
-  text-align: left;
-  }	  
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive input {
+    float: none;
+    display: block;
+    width: 90%;
+    padding: 12px;
+    border: 2px solid black;
+    text-align: left;
+  }
 
   .nav-links li {
     opacity: 0;
@@ -523,7 +518,7 @@ main {
   .line {
     width: 30px;
     height: 3px;
-    background-color: #333;
+    background-color: #fff;
     margin: 5px;
   }
 
@@ -545,18 +540,12 @@ main {
   }
 }
 
-@media screen and (min-width: 481px) {
-
-  .dates-boxes {
-    flex-direction: row;
-  }
-
-  h1 {
-    font-size: 100px;
-  }
-
-
-
+section .dates-boxes {
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
   /*Favs desktop*/
 
   .content {
@@ -567,8 +556,7 @@ main {
   .photo-credits {
     display: flex;
     flex-direction: row;
-  text-align: center;
-  align-items: center;
-  align-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
   }
-}
