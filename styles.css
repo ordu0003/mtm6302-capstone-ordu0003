@@ -28,6 +28,10 @@ p {
   margin: 2rem 0 2rem 0;
 }
 
+h1 h2 h3 {
+  margin: 0;
+}
+
 /*Nav search bar */
 
 .navbar {
@@ -160,8 +164,16 @@ p {
 }
 
 /*Search date in banner*/
-.search-date {
+.search-date form {
   padding: 1rem;
+  height: 2.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  color: #fff;
 }
 
 form .search-form input[type="text"] {
@@ -172,23 +184,19 @@ form .search-form input[type="text"] {
   width: 50%;
 }
 
-form.example button {
+form button {
   float: left;
   width: 20%;
   padding: 10px;
   background: #2196F3;
   color: white;
   font-size: 17px;
-  border: 1px solid grey;
   border-left: none;
   cursor: pointer;
 }
 
-form.example button:hover {
-  background: #0b7dda;
-}
 
-form.example::after {
+form::after {
   content: "";
   clear: both;
   display: table;
@@ -200,18 +208,15 @@ section .dates-boxes {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
+  
 }
 
 .day-box {
   background-color: #3017B6;
   color: #FFFFFF;
   border-radius: 25px;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 0 5rem;
 }
 
 .day-box-content {
@@ -219,7 +224,6 @@ section .dates-boxes {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
 }
 
 .date {
@@ -236,6 +240,9 @@ section .dates-boxes {
   border-radius: 1.625rem 1.625rem 0 0;
   width: 100%;
   text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
 }
 
 .date h2 {
@@ -282,15 +289,12 @@ section .dates-boxes {
 /* Month header */
 
 .calendar {
-  width: 80%;
   background-color: rgba(255, 255, 255, 0.2);
   outline: none;
   border: none;
   border-radius: 1.625rem;
-  margin: 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  margin: 30px auto;
+  width: 80%;
 }
 
 .month {
@@ -403,14 +407,7 @@ main {
   text-align: center;
   align-items: center;
   align-content: center;
-}
-
-.favs-content {
-  display: inline;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  width: 80%;
+  padding: 20px;
 }
 
 .favs {
@@ -443,14 +440,12 @@ main {
 .content {
   width: 80%;
   color: #fff;
-  display: inline;
-  text-align: center;
-  align-items: center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-.content img {
-  margin-top: 2rem;
+img .responsive {
   border-radius: 1.625rem;
 }
 
@@ -458,6 +453,8 @@ main {
   width: 100%;
   max-width: 1920px;
   height: auto;
+  margin-top: 30px;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -548,15 +545,4 @@ section .dates-boxes {
 }
   /*Favs desktop*/
 
-  .content {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .photo-credits {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-  }
+ 
