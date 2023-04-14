@@ -133,6 +133,8 @@ nav {
 
 /*Main banner*/
 
+
+
 .banner {
   height: 70vh;
   display: flex;
@@ -153,7 +155,7 @@ nav {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   margin-bottom: 10px;
 }
 
@@ -208,7 +210,6 @@ section .dates-boxes {
   justify-content: center;
   align-items: center;
   width: 80%;
-  
 }
 
 .day-box {
@@ -230,7 +231,7 @@ section .dates-boxes {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 16px 0;
+  margin: 2rem 0;
   text-align: center;
 }
 
@@ -249,6 +250,7 @@ section .dates-boxes {
   font-weight: 100;
   letter-spacing: 15px;
   border-bottom: solid 0.5px #FFFFFF;
+  font-size: 1.5rem;
 }
 
 .date p {
@@ -536,12 +538,19 @@ img .responsive {
   }
 }
 
-section .dates-boxes {
-  height: fit-content;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 768px) {
+
+.dates-boxes {
+  display: flex;
+  flex-wrap:nowrap;
 }
+
+.day-box-content{
+  padding: 1rem;
+}
+
+}
+
   /*Favs desktop*/
 
  
