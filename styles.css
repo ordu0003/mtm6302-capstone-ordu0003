@@ -1,0 +1,556 @@
+html {
+  font-family: 'Unbounded', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151336;
+  background-image: url("images/nasa-bg.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p {
+  color: #FFFFFF;
+  margin: 2rem 0 2rem 0;
+}
+
+h1 h2 h3 {
+  margin: 0;
+}
+
+/*Nav search bar */
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.active {
+  background-color: #3017B6;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar a:hover,
+input:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.nav-links ul {
+  padding-left: 0;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* CSS for search box */
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+}
+
+/*Main banner*/
+
+
+
+.banner {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin: 0 auto;
+}
+
+.banner-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/*Search date in banner*/
+.search-date form {
+  padding: 1rem;
+  height: 2.8rem;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+form .search-form input[type="text"] {
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+}
+
+form button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border-left: none;
+  cursor: pointer;
+}
+
+
+form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Calendar Section*/
+section .dates-boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.day-box {
+  background-color: #3017B6;
+  color: #FFFFFF;
+  border-radius: 25px;
+  margin: 0 5rem;
+}
+
+.day-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.tittle {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1.625rem 1.625rem 0 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+
+}
+
+.date h2 {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 15px;
+  border-bottom: solid 0.5px #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.date p {
+  color: #58EBD8;
+  font-weight: 900;
+  font-size: 8rem;
+  margin: 0;
+}
+
+.date-mmyy {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.day-button {
+  background-color: #58EBD8;
+  color: #FFFFFF;
+  border-radius: 0 0 1.625rem 1.625rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 1rem 0;
+  font-size: x-large;
+  text-decoration: underline;
+}
+
+
+
+/*Calendar Page*/
+/* Month header */
+
+.calendar {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  margin: 30px auto;
+  width: 80%;
+}
+
+.month {
+  padding: 2rem;
+  text-align: center;
+  background-color: #58EBD8;
+  border-radius: 1.625rem 1.625rem 0 0;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  color: white;
+  padding-left: 0;
+}
+
+.weekdays ul {
+  margin: 0;
+  padding: 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 12px;
+  color: #ffffff;
+  border: solid 0.5px #FFFFFF;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+/*Calendar 2*/
+
+.calendar-2 {
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.month-tittle {
+  background-color: #F70C51;
+  width: 100%;
+  border-radius: 1.625rem 1.625rem 0 0;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+.calendar-2 .weekdays {
+  width: 95%;
+  color: #FFFFFF;
+  padding-top: 1rem;
+  padding-left: 0;
+}
+
+/* You favs*/
+main {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.favs {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.favs-date {
+  background-color: #58EBD8;
+  width: 100%;
+  border-radius: 1.625rem 1.625rem 0 0;
+  color: #3017B6;
+  font-weight: 900;
+  letter-spacing: 10px;
+}
+
+.favs h2 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.content {
+  width: 80%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+img .responsive {
+  border-radius: 1.625rem;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin-top: 30px;
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .navbar a:not(:first-child),
+  .navbar input {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive input {
+    float: none;
+    display: block;
+    width: 90%;
+    padding: 12px;
+    border: 2px solid black;
+    text-align: left;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .search-form input[type="text"] {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+.dates-boxes {
+  display: flex;
+  flex-wrap:nowrap;
+}
+
+.day-box-content{
+  padding: 1rem;
+}
+
+}
+
+  /*Favs desktop*/
+
+ 
