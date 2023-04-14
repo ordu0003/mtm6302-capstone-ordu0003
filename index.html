@@ -8,9 +8,11 @@
   <title>Nasa: Photo of The Day</title>
   <link href="styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/a3c61ba515.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body>
@@ -48,9 +50,8 @@
             explanation wrien by a professional astronomer.</p>
           <div class="search-date">
             <form class="search-form" action="/action_page.php">
-                <label for="date">Search by Date</label> <br>
-                <input type="date" id="date" name="date">
-                <button type="submit"><i class="fa fa-search"></i></button>
+              <input type="datetime-local"  placeholder="Search by Date" id="date" name="date">
+              <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
             </form>
           </div>
         </div>
@@ -61,17 +62,30 @@
             <h3>Today's Photo</h3>
           </div>
           <div class="day-box-content">
-          <div class="date">
-            <h2>Wednesday</h2>
-            <p>08</p>
-            <div class="date-mmyy">February
-            <br>2023</div>
+            <div class="date" id="date">
+              <h2>Wednesday</h2>
+              <p>08</p>
+              <div class="date-mmyy">February
+                <br>2023</div>
+            </div>
+          </div>
+          <div class="day-button"><a>See Picture <i class="fa-sharp fa-solid fa-arrow-right"></i></a></div>
+
+        </div>
+        <div class="date-picker">
+          <div class="selected-date"></div>
+
+          <div class="dates">
+            <div class="month">
+              <div class="arrows prev-mth">&lt;</div>
+              <div class="mth"></div>
+              <div class="arrows next-mth">&gt;</div>
+            </div>
+            <div class="days"></div>
           </div>
         </div>
-            <div class="day-button"><a>See Picture <i class="fa-sharp fa-solid fa-arrow-right"></i></a></div>
-          
-        </div>
-        <div class="calendar">
+
+        <!-- <div class="calendar">
           <div class="month">
             <ul>
               <li>March<br><span style="font-size:18px">2023</span></li>
@@ -119,15 +133,20 @@
             <li>28</li>
             <li>29</li>
             <li>30</li>
-
           </ul>
-        </div>
+        </div> -->
       </section>
     </main>
   </div>
   <footer>
     <p>© 2023. All Rights Reserved</p>
   </footer>
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    flatpickr("input[type=datetime-local]", {});
+  </script>
+
 </body>
 
 </html>
