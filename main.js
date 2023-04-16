@@ -134,18 +134,21 @@
 
 // 	return day + ' / ' + month + ' / ' + year;
 // }
+
  document.querySelector('button').addEventListener('click', getFetch)
 
- function getFetch() {
-    const choice = document.querySelector('input').value
-    const url = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'+choice
+ function getFetch(){
+    const choice = document.querySelector('input').value.toLowerCase()
+    const url = `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${choice}`
 
     fetch(url)
     .then(res => res.json())
     .then(data => {
         console.log(data)
+        document.querySelector('img.img').src = data.hdurl
+        document.querySelector('h4').innerText = data.explanation
     })
     .catch(err => {
-        console.log(`error${err}`)
+        console.log(`error ${err}`)
     });
  }
