@@ -29,8 +29,15 @@ p {
 }
 
 
-h1 h2 h3 {
+h1 h2 {
   margin: 0;
+}
+
+h3 {
+  color: #FFF;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 h4 {
@@ -178,6 +185,18 @@ p {
   margin-bottom: 20px;
 }
 
+.button2{
+background-color: #1abc9c;
+border-radius:  100px;
+padding: 15px 50px;
+color: #fff;
+margin-bottom: rem;
+}
+
+.button2 i {
+  padding-left: 15px;
+}
+
 /*Search date in banner*/
 /* .search-date form {
   padding: 1rem;
@@ -224,6 +243,10 @@ form::after {
   border-radius: 25px;
 }
 
+iframe{
+    width: 100%;
+  }  
+
 
 /* Calendar Section*/
 section .dates-boxes {
@@ -238,7 +261,7 @@ section .dates-boxes {
   background-color: #3017B6;
   color: #FFFFFF;
   border-radius: 25px;
-  margin: 0 5rem;
+  margin: 5rem;
 }
 
 .day-box-content {
